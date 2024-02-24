@@ -1,3 +1,13 @@
+h1 {
+  color: coral;
+  font-size: 36px;
+}
 p {
+  color: rgb(0, 68, 0);
+}
+p:nth-child(odd) {
   background-color: lightgreen;
+}
+p:nth-child(2n) {
+  background-color: yellow;
 }
