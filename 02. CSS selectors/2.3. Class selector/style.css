@@ -1,3 +1,14 @@
+.title {
+  background-color: darkgoldenrod;
+  color: rgb(60, 68, 76);
+  padding: 10px;
+}
 .highlight {
-  background-color: magenta;
+  padding: 10px;
+  background-color: lightslategrey;
+  font-size: 20px;
+  color: azure;
+}
+.italic {
+  font-style: italic;
 }
