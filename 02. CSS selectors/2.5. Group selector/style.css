@@ -1,5 +1,24 @@
-#mainHeading,
+.mainHeading,
 p,
 span {
-  background-color: lightskyblue;
+  background-color: lightslategray;
+  color: azure;
+  font-style: italic;
+  padding: 5px;
+}
+.paragraphBlock p:last-child {
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+  font-style: italic;
+  padding: 5px;
+  background-color: goldenrod;
+}
+h1,
+h2,
+h3 {
+  color: rgb(43, 43, 43);
+  background-color: goldenrod;
+  font-style: italic;
+  padding: 5px;
+  letter-spacing: 2px;
 }
