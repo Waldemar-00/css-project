@@ -1,3 +1,18 @@
-[data-category="main" i] {
+[data-category='main' i] {
   background-color: lightsalmon;
+  color: rgb(63, 63, 63);
+  font-style: italic;
+  padding: 4px;
+}
+[heading-type='primary' i] {
+  background-color: goldenrod;
+  font-style: italic;
+  color: lightslategrey;
+  padding: 7px;
+}
+[heading-type='secondary' i] {
+  font-style: italic;
+  background-color: green;
+  color: yellow;
+  padding: 5px;
 }
