@@ -1,3 +1,17 @@
 div .greet {
   background-color: yellowgreen;
+  border-radius: 4px;
+  padding: 4px;
+  color: black;
+}
+.greet + a {
+  text-decoration: none;
+}
+form .btn {
+  background-color: red;
+  padding: 7px;
+  font-size: 20px;
+  color: azure;
+  border: none;
+  border-radius: 4px;
 }
