@@ -1,3 +1,17 @@
+main > .rectCombinator {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 10px;
+}
+div p {
+  background-color: brown;
+  color: azure;
+  padding: 7px;
+  font-size: 24px;
+}
 div > p {
-  background-color: cyan;
+  background-color: rgb(3, 96, 96);
+  padding: 4px;
+  font-size: 18px;
+  color: white;
 }
