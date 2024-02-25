@@ -1,3 +1,9 @@
 .greet ~ p {
   background-color: lightgrey;
+  padding: 7px;
+}
+h2 ~ button {
+  background-color: beige;
+  color: blue;
+  margin: 20px;
 }
