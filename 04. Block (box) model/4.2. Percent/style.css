@@ -1,7 +1,21 @@
 .container {
-  border: 2px solid blue;
+  padding: 1rem;
+  border: 2px solid green;
+  font-size: 0;
+  margin-bottom: 2rem;
 }
 
 .container img {
-  width: 30%;
+  /* width: 25%; */
+  width: calc(100% / 3);
+}
+.textContainer {
+  padding: 1rem;
+}
+.container p {
+  display: inline-block;
+  font-size: initial;
+  width: calc((100% - 8rem) / 4);
+  /* width: calc(100% / 4 - 1rem); */
+  padding: 1rem;
 }
