@@ -1,15 +1,22 @@
-div {
+div.bordered {
   width: 200px;
   height: 200px;
-  border: 5px solid red;
+  border: 7px groove rgb(229, 201, 61);
 }
 
 p {
+  padding: 1rem;
   width: 50%;
 
-  border-left: 5px dashed darkblue;
+  border-left: 5px outset rgb(118, 118, 226);
 
   border-bottom-width: 5px;
-  border-bottom-color: darkblue;
-  border-bottom-style: dotted;
+  border-bottom-color: rgb(118, 118, 226);
+  border-bottom-style: inset;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  margin-right: 1rem;
 }
