@@ -1,0 +1,19 @@
+.bg-image {
+  background-image: url('https://picsum.photos/id/46/300');
+  width: 150px;
+  height: 750px;
+  border: 1px solid gray;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+  background-color: green;
+}
