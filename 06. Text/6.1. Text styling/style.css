@@ -1,0 +1,115 @@
+/*! html {font-size: 20px; it set fomt-size for the body} */
+body {
+  margin: 50px;
+  font-size: 20px;
+}
+
+/* p {
+  width: 750px;
+} */
+
+.text-color {
+  color: blue;
+}
+
+/*********************************************/
+
+.text-italic {
+  font-style: italic;
+}
+
+/*********************************************/
+
+.text-bold {
+  font-weight: bold;
+  /* или */
+  /* font-weight: 700; */
+}
+
+/*********************************************/
+
+.text-large {
+  font-size: 2rem;
+  /*! 2 * 16px = 36px */
+  /* font-size: 2em; */
+  /*! 2 * 16px = 40px */
+  width: 100%;
+}
+
+/*********************************************/
+
+/* класс, позволяющий увеличить размер шрифта на 50% */
+.text-medium {
+  font-size: 1.5rem;
+}
+
+.text-line-space {
+  line-height: 1.8; /* умножается на размер шрифта */
+}
+
+/*********************************************/
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/*********************************************/
+
+.text-underline {
+  text-decoration: underline;
+}
+.text-decoration-overline {
+  text-decoration: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: brown;
+  line-height: 4rem;
+  text-decoration-thickness: 2px;
+}
+
+.text-line-through {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+
+  /* или сокращенное свойство */
+  /* text-decoration: line-through dashed red 3px; */
+}
+
+/*********************************************/
+
+.text-left,
+.text-center,
+.text-right {
+  width: 100%;
+  background-color: gold;
+  padding: 10px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justified {
+  width: 55%;
+  text-align: justify;
+}
+/* .match-parent {
+  text-align: match-parent;
+} */
