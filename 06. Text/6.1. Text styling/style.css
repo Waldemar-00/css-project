@@ -1,4 +1,4 @@
-/*! html {font-size: 20px; it set fomt-size for the body} */
+/*! html {font-size: 20px; it set font-size for the body} */
 body {
   margin: 50px;
   font-size: 20px;
@@ -45,6 +45,7 @@ body {
 
 .text-line-space {
   line-height: 1.8; /* умножается на размер шрифта */
+  /* ! 1.15 - default */
 }
 
 /*********************************************/
@@ -76,9 +77,10 @@ body {
 
 .text-line-through {
   text-decoration-line: line-through;
-  text-decoration-style: wavy;
-  text-decoration-color: red;
-  text-decoration-thickness: 3px;
+  /* text-decoration-style: wavy; */
+  text-decoration-style: double;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-thickness: 1px;
 
   /* или сокращенное свойство */
   /* text-decoration: line-through dashed red 3px; */
@@ -89,13 +91,13 @@ body {
 .text-left,
 .text-center,
 .text-right {
-  width: 100%;
+  /* width: 100%; */
   background-color: gold;
   padding: 10px;
 }
 
 .text-left {
-  text-align: left;
+  text-align: left; /*! DEFAULT CASE*/
 }
 
 .text-center {
@@ -107,9 +109,16 @@ body {
 }
 
 .text-justified {
-  width: 55%;
+  width: 75%;
   text-align: justify;
+  font-size: 1em;
 }
 /* .match-parent {
   text-align: match-parent;
 } */
+.list {
+  font-size: 1.25rem;
+  color: green;
+  font-style: italic;
+  list-style: inside;
+}
