@@ -2,10 +2,23 @@ body {
   margin: 70px;
   font-size: 1.5rem;
 }
-
+ul,
+ol {
+  list-style: inside;
+}
 /* Разрешено ограниченное количество свойств:
 https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties */
-li::marker {
+ul li::marker {
   color: green;
-  content: "\21D2   "; /* "=>" знак и отступ справа от него */
+  content: '\2713   '; /* "=>" знак и отступ справа от него */
+}
+summary::marker {
+  color: green;
+  /* content: '\21D2   '; */
+  content: 'detail   ';
+}
+
+ol li::marker {
+  color: brown;
+  content: '😃   '; /*! IF UTF-8!!!*/
 }
