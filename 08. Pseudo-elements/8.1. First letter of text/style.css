@@ -1,0 +1,17 @@
+body {
+  margin: 70px;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+p::first-line {
+  color: brown;
+  font-style: italic;
+  font-size: 1.7rem;
+}
+p::first-letter {
+  color: green;
+  font-size: 3rem;
+}
