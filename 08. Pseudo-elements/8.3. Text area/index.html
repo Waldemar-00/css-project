@@ -2,23 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Псевдоэлемент ::placeholder</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
   </head>
 
   <body>
     <h1>Стилизация поля ввода</h1>
     <h2>Псевдоэлемент ::placeholder</h2>
     <hr />
-
-    <div class="input-group">
-      <label>Email:</label>
-      <input type="email" placeholder="Введите ваш Email" />
-    </div>
-    <div class="input-group">
-      <label>Пароль:</label>
-      <input type="password" placeholder="Введите ваш пароль" />
-    </div>
+    <form action="">
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Введите ваш Email"
+          required
+          autocomplete="email"
+        />
+      </div>
+      <div class="input-group">
+        <label for="pass">Пароль:</label>
+        <input
+          id="pass"
+          type="password"
+          name="password"
+          placeholder="Введите ваш пароль"
+          title="Password must contains minimum:
+          8 signs, a digit,
+          a letter lowercase,
+          a letter uppercase,
+          a special sign. Password maxlength 64."
+          required
+          minlength="8"
+          maxlength="64"
+          pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,64}"
+          autocomplete="current-password"
+        />
+      </div>
+      <button>Send</button>
+    </form>
   </body>
 </html>
