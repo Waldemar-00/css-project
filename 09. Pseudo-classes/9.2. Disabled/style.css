@@ -1,0 +1,35 @@
+body {
+  margin: 30px;
+}
+
+button {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disabled-button:disabled {
+  background-color: rgb(231, 231, 231);
+  color: darkgray;
+  cursor: not-allowed;
+}
+.enabled {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+input {
+  display: block;
+  width: 12rem;
+  height: 1.7rem;
+  margin: 2rem 0;
+}
+input:disabled {
+  cursor: not-allowed;
+}
+input:enabled {
+  background-color: violet;
+}

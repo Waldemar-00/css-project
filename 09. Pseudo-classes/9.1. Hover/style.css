@@ -1,0 +1,37 @@
+body {
+  margin: 30px;
+}
+
+.btn {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  background-color: rgba(40, 116, 167, 0.6);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(40, 116, 167, 0.8);
+  color: azure;
+  box-shadow: -7px -7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  padding: 13px 23px;
+  box-shadow: none;
+  background-color: rgba(40, 116, 167, 1);
+}
+.btn-margin:active {
+  margin-top: 32px;
+  margin-left: 2px;
+  box-shadow: none;
+  background-color: rgba(40, 116, 167, 1);
+}
+.wrapper:hover {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: goldenrod;
+  transition: padding 1s;
+}
