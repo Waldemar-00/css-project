@@ -1,26 +1,39 @@
 body {
-  margin: 70px;
+  margin: 50px;
   font-size: 1.2rem;
 }
 
 .menu {
-  list-style-type: none; /* удаление маркеров элементов списка */
-  padding: 0; /* удаление стандартных отступов для элемента ul */
+  list-style-type: none;
+  list-style: inside;
+  padding: 0;
   margin-top: 35px;
 }
-
-.menu li {
+.menu > li::marker {
+  content: '🥳   ';
+}
+.menu ol > li::marker {
+  content: '😋   ';
+}
+.menu > li {
   padding: 20px;
   background-color: lightgray;
   border-bottom: 3px solid yellow;
 }
-
-/* Стилизация первого элемента списка */
-.menu li:first-child {
+.menu ol > li {
+  padding: 10px;
+  background-color: rgb(212, 235, 255);
+  border-bottom: 2px solid yellowgreen;
+}
+.menu ol > li:last-child {
+  border: none;
+}
+.menu > li:first-child {
   background-color: lightseagreen;
   color: white;
 }
 
-.menu li:last-child {
-  border-bottom: none; /* Удаление нижней границы для последнего элемента */
+.menu > li:last-child {
+  border-bottom: none;
+  background-color: rgb(159, 159, 159);
 }
