@@ -1,0 +1,35 @@
+body {
+  margin: 30px;
+}
+#conflict {
+  color: coral;
+  text-decoration-line: underline;
+}
+.title {
+  color: blue;
+}
+
+h2 {
+  color: green;
+}
+
+/*********************************************/
+.description {
+  color: darkblue;
+  font-size: 1.7rem;
+}
+/*
+EQUAL ABOVE and BELOW
+*/
+[class='description'] {
+  color: darkred;
+}
+
+/*********************************************/
+#last-paragraph {
+  color: blue !important;
+}
+#last-paragraph,
+.main {
+  color: green !important;
+}
