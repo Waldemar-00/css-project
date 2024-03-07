@@ -7,23 +7,31 @@ body {
   width: 200px;
   height: 200px;
   background-color: darkorange;
-  transition-property: background-color;
+  /* transition-property: background-color, width, height;
   transition-duration: 0.8s;
   transition-timing-function: linear;
+  transition-delay: 0.4s; */
+  /*! transition: background-color 0.8s linear 0.4s, width 0.8s linear 0.4s, height 0.8s linear 0.4s; */
+  transition: all 0.8s linear 0.4s;
 }
 
 .box:hover {
   background-color: blueviolet;
+  width: 220px;
+  height: 220px;
 }
 
 /*********************************************/
 
 .menu {
-  list-style-type: none; /* удаление маркеров элементов списка */
-  padding: 0; /* удаление стандартных отступов элемента ul */
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
   margin-top: 35px;
 }
-
+.menu li::marker {
+  content: '🤠   ';
+}
 .menu li {
   padding: 20px;
   height: 20px;
@@ -36,4 +44,19 @@ body {
   background-color: lightseagreen;
   color: white;
   font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.btn {
+  padding: 7px 5rem;
+  transition: all 0.6s ease-in-out 0.4s;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: darkorange;
+  color: beige;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  border: 2px solid rgb(189, 104, 0);
+  padding: 11px 7rem;
+  cursor: pointer;
 }
