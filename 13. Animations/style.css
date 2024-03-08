@@ -1,7 +1,9 @@
 body {
   margin: 30px;
 }
-
+h1 {
+  color: darkgoldenrod;
+}
 .box {
   margin: 30px 0;
   width: 150px;
@@ -22,6 +24,7 @@ body {
 }
 .move-xy:hover {
   animation-play-state: paused;
+  cursor: pointer;
 }
 @keyframes move {
   from {
@@ -35,20 +38,26 @@ body {
 /*********************************************/
 
 .move-x {
-  background-color: burlywood;
+  padding: 130px;
+  background-color: #fff;
+  font-size: 1.2rem;
+  width: 300px;
+  color: rgb(217, 143, 46);
+  /* background-color: burlywood; */
   margin-top: 130px;
-  animation: moveX 3s ease-in-out 0s infinite alternate;
+  animation: moveX 4s ease-in-out 0s infinite alternate;
   animation-play-state: paused;
 }
 .move-x:hover {
   animation-play-state: running;
+  cursor: pointer;
 }
 @keyframes moveX {
   from {
-    translate: 0px; /* начиная с начальной позиции */
+    translate: 10px -50px; /* начиная с начальной позиции */
   }
   to {
-    translate: 100%; /* 100% ширины */
+    translate: 100% 100%; /*! 100% ширины своей */
   }
 }
 
@@ -56,13 +65,14 @@ body {
 
 .scale {
   margin-top: 60px;
-  animation: size 2s ease-in-out 0s infinite alternate;
+  animation: scale 2s ease-in-out 0s infinite alternate paused;
 }
 .scale:hover {
-  animation-play-state: paused;
+  animation-play-state: running;
+  cursor: pointer;
 }
 
-@keyframes size {
+@keyframes scale {
   from {
     scale: 1; /* начиная с 100% от исходного размера */
     background-color: violet;
@@ -152,4 +162,28 @@ body {
     height: 50px;
     background-color: pink;
   }
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-left: none;
+  margin-left: calc(50% - 25px);
+  border-right: 5px dashed orangered;
+  border-bottom: 5px dashed orangered;
+  border-top: none;
+  border-radius: 50%;
+  animation: rotating-spinner 1.4s 0s infinite linear running normal;
+}
+@keyframes rotating-spinner {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+hr {
+  height: 4px;
+  background-color: rgb(217, 143, 46);
+  border: none;
 }

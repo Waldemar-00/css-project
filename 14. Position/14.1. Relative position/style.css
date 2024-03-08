@@ -1,0 +1,46 @@
+body {
+  margin: 30px;
+}
+
+p {
+  border: 3px solid blue;
+  padding: 10px;
+  width: 274px;
+  margin: 0;
+}
+.z-index {
+  position: relative;
+  /* z-index: 10; */
+  background-color: red;
+  color: azure;
+}
+.customPosition {
+  background-color: burlywood;
+  position: relative;
+  /* position: static; */
+  top: 30px;
+  left: 70px;
+}
+
+/*********************************************/
+
+.content-block {
+  margin-top: 50px;
+  position: relative;
+}
+
+.relative {
+  position: relative;
+  top: -80px;
+  left: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  width: 200px;
+  font-size: 1.2rem;
+}
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 310px;
+}
