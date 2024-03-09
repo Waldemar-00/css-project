@@ -1,22 +1,24 @@
 body {
   margin: 30px;
-  font-size: 1.3rem;
 }
 
 dl {
-  width: 250px;
-  overflow: auto; /* отображение полос прокрутки, если содержимое переполняет элемент */
-  height: 250px;
+  width: 320px;
+  overflow: auto;
+  height: 242px;
   border: 2px solid burlywood;
 }
 
 dt {
   position: sticky;
-  top: 0; /* попробуйте изменить это значение на 20px */
+  top: 0px;
   background-color: bisque;
-  margin-bottom: 3px;
   padding: 10px;
+  font-weight: bold;
 }
+/* .always {
+  z-index: 10;
+} */
 
 dd {
   padding: 10px;
