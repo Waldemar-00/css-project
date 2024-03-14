@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+h1 {
+  color: red;
+  border-bottom: 3px solid brown;
+  width: 94vw;
+  padding: 1rem;
+  margin: 0 auto;
+  font-style: italic;
+}
+.container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgb(234, 59, 234);
+  color: rgb(96, 80, 58);
+  text-align: center;
+}
+.cell {
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: pink;
+}
+.cell:nth-child(7) {
+  align-self: end;
+  grid-row: span 2;
+  grid-column: span 2;
+}
